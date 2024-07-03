@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+
+}
+
+.site-content {
+    flex:1;
 }
 
 .navbar {
@@ -39,6 +46,11 @@ body {
     padding-bottom: 30px;
 }
 
+.random-info-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 .boxes {
     border: 2px solid red;
     height: 100px;
@@ -66,17 +78,20 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
+    background-color: pink;
     
 }
 
 .sign-up-window {
+    display: flex;
     background-color: #3882f6;
-    width: 600px;
-}
-
-.random-info-title {
-    text-align: center;
-    margin-bottom: 30px;
+    height: 75px;
+    width: 850px;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 100px
+    ;
 }
 
 .sign-up .sign-up-window {
@@ -121,3 +136,9 @@ ul {
     width :300px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
