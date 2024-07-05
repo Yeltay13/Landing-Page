@@ -1,144 +1,148 @@
 * {
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
-
-
-
-body {
+.site-content {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-
 }
-
-.site-content {
-    flex:1;
+    /* Navbar */
+.navbar-container {
+    background-color: #1f2937;
+    padding: 20px 0px;
 }
-
 .navbar {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 30px;
-}
-
-.header {
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+    margin: auto;
+  }
+  .navbar ul {
     display: flex;
-    justify-content: center;
-    margin-right: auto;
-}
+    gap: 16px;
+    font-size: 18px;
+    color: #e5e7eb
+  }
+  .navbar ul li {
+    list-style-type: none;
+  }
+  .navbar h2 {
+    color: #f9faf8;
+    font-size: 24px;
+  }
+    /* Navbar */
 
+    /* main info */
+.main-info-container {
+    padding: 30px 0px;
+    background-color: #1f2937;
+}
 
 .main-info {
     display: flex;
-    flex-direction: row;
-    padding: 30px;
+    align-items: center;
     justify-content: space-between;
-}
-
-.random-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 30px;
-}
-
-.random-info-title {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.boxes {
-    border: 2px solid red;
-    height: 100px;
-    width: 100px;
-}
-
-
-.quote {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-    background-color: #e5e7eb;
-}
-
-.quote-text {
-    min-width:0;
-    width: 500px;
-}
-
-.sign-up {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    background-color: pink;
-    
-}
-
-.sign-up-window {
-    display: flex;
-    background-color: #3882f6;
-    height: 75px;
-    width: 850px;
-    min-width: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 100px
-    ;
-}
-
-.sign-up .sign-up-window {
-    display: flex;
-    flex-direction: row;
-}
-
-
-
-button {
-    background-color: #3882f6;
-    border-color: white;
-}
-
-
-blockquote {
-    margin-top: 30px;
-    font-weight:100;
-    /*font-size: 36px;*/
-    font-style: italic;
-    color: #1f2937;
-}
-
-
-.links ul{
-    display: flex;
-    flex-direction: row;
+    margin: auto;
+    width: 70%;
     gap: 16px;
 }
 
 
-.a {
-    text-decoration: none;
+.main-info-right {
+    flex: 1;    
+}
+.main-info-left {
+    flex: 1;
 }
 
-ul {
-    list-style-type: none;
+.placeholder-image {
+    max-width: 100%;
 }
 
-.placeholder {
-    height: 100px;
-    width :300px;
+.main-info h2 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
 }
 
-footer {
+.main-info p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+    /* main info */
+
+    /* random info title*/
+.random-info-title {
+    text-align: center;
+    padding: 30px 0px;
+}
+    /* random info title*/
+
+    /* Random info */
+.random-info-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    width: 70%;
+    margin: auto;
 }
+
+.random-info-card {
+    width: 450px;
+    height: 220px;
+}
+
+.card-image {
+    height: 150px;
+    background-size: cover;
+}
+
+.image-1 {
+    background-image: url(/img/batman.jpg);
+}
+    /* Random info */
+
+
+
+
+
+
+
+
+
+
+
+
+    /* main info button */
+
+    .main-info-btn {
+        background-color: #3882f6;
+      appearance: button;
+      backface-visibility: hidden;
+      border-radius: 6px;
+      border-width: 0;
+      box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+      font-size: 100%;
+      height: 44px;
+      line-height: 1.15;
+      margin: 12px 0 0;
+      outline: none;
+      overflow: hidden;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      transform: translateZ(0);
+      transition: all .2s,box-shadow .08s ease-in;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+        /* main info button */
