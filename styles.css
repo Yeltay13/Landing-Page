@@ -122,19 +122,19 @@ body {
 }
 
 .image-1 {
-    background-image: url(/img/batman.jpg);
+    background-image: url(img/batman.jpg)
 }
 
 .image-2 {
-    background-image: url(/img/ironman.jpg);
+    background-image: url(img/ironman.jpg);
 }
 
 .image-3 {
-    background-image: url(/img/spiderman.jpg);
+    background-image: url(img/spiderman.jpg);
 }
 
 .image-4 {
-    background-image: url(/img/wolverine.jpg);
+    background-image: url(img/wolverine.jpg);
 }
 /* Random info */
 
